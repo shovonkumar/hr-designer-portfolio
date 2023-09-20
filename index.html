@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-montserrat">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,10 +7,189 @@
     <title>HR Designer Portfolio</title>
     <!-- Website Icon -->
     <link rel="icon" href="./images/icon.png" />
+    <!-- Box Icon CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <h1 class="bg-red-400">hello</h1>
+    <!-- Header Part Start -->
+    <div
+      id="backdrop"
+      class="hidden fixed top-0 left-0 w-full h-full bg-dark/50 transition-all duration-300 ease-in z-[900]"
+    ></div>
+    <header class="absolute top-0 left-0 w-full md:pt-2 text-white z-[990]">
+      <!-- Nav Menu -->
+      <nav class="w-full py-3">
+        <div class="container flex justify-between items-center">
+          <div>
+            <a
+              href="/"
+              class="text-primary inline-block relative font-bold text-3xl logo-before ml-2"
+              >HR</a
+            >
+          </div>
+          <ul
+            id="menu-ul"
+            class="absolute h-[100vh] bg-dark2 top-0 left-[-100%] z-[1000] w-[70%] sm:w-1/2 md:w-auto pt-14 md:pt-0 md:bg-transparent md:h-auto md:static flex flex-col md:flex-row items-center gap-2 md:gap-4 duration-300 ease-in-out"
+          >
+            <li>
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Work</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Service</a>
+            </li>
+          </ul>
+          <button
+            id="menu-btn"
+            class="block md:hidden text-[2rem] leading-none text-primary"
+          >
+            <i id="menu-icon" class="bx bx-menu"></i>
+          </button>
+        </div>
+      </nav>
+      <!--Nav Menu End -->
+    </header>
+    <!-- Header Part End -->
+    <main>
+      <!-- Hero Part Start -->
+      <section
+        style="background-image: url(./images/herobg.jpg)"
+        class="relative bg-no-repeat bg-cover bg-center bg-dark/50 h-[100vh] sm:h-auto sm:py-60"
+      >
+        <div
+          class="container h-full flex items-center justify-center md:justify-start"
+        >
+          <h2
+            class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] text-white text-center md:text-left font-bold leading-[1.25] tracking-[1px]"
+          >
+            I'm a passioned UI designer <br class="hidden md:block" />
+            based in <span class="text-primary">Santo Domnigo.</span>
+            <br class="hidden md:block" />
+            currently working for
+            <span class="text-primary"
+              >Commit <br class="hidden md:block" />
+              2 Design</span
+            >
+          </h2>
+          <p
+            class="hidden sm:block text-white text-[14px] text-right absolute right-12 bottom-10"
+          >
+            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris
+            <br />
+            <span class="text-primary">Cursus</span> and
+            <span class="text-primary">Tales mistra</span>
+          </p>
+        </div>
+      </section>
+      <!-- Hero Part End -->
+      <!-- About Part Start -->
+      <section class="py-20">
+        <div class="container">
+          <h2 class="title title-before before:bg-primary">
+            A little more about me
+          </h2>
+          <div
+            class="mt-12 flex flex-col md:flex-row justify-between items-start gap-6 md:gap-4 lg:gap-8"
+          >
+            <div class="md:w-1/5 lg:w-1/3">
+              <h4 class="uppercase font-bold text-base mb-4">skills</h4>
+              <ul
+                class="flex flex-col sm:flex-row md:flex-col gap-2 sm:gap-8 md:gap-2"
+              >
+                <li class="font-medium text-dark2">UI Design</li>
+                <li class="font-medium text-dark2">UX Design</li>
+                <li class="font-medium text-dark2">Web Development</li>
+                <li class="font-medium text-dark2">Strategy</li>
+              </ul>
+            </div>
+            <div class="md:w-2/5 lg:w-1/3">
+              <h4 class="uppercase font-bold text-base mb-4">personal</h4>
+              <p class="text-dark2 text-justify font-medium text-[15px] mb-4">
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                Non mauris vitae erat consequat auctor eu in elit. Morbi
+                accumsan ipsum velit.
+              </p>
+              <p class="text-dark2 text-justify font-medium text-[15px]">
+                Sociosqu ad litora torquent per conubia nostra. Aptent taciti
+                sociosqu ad litora torquent per conubia nostra
+              </p>
+            </div>
+            <div class="md:w-2/5 lg:w-1/3">
+              <h4 class="uppercase font-bold text-base mb-4">expertise</h4>
+              <p class="text-dark2 text-justify font-medium text-[15px] mb-4">
+                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                auctor a ornare odio. Sed non mauris vitae erat mauris idio
+                consequat auctor eu in elit.
+              </p>
+              <p class="text-dark2 text-justify font-medium text-[15px]">
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Sed non mauris vitae erat
+                consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Part End -->
+      <!-- Work Part Start -->
+      <section class="py-20 bg-primary">
+        <div class="container">
+          <h2 class="title title-before before:bg-white">Recent Work</h2>
+          <div class="mt-14 flex flex-col md:flex-row gap-4 justify-between">
+            <div class="w-full md:w-1/3 order-2 md:order-1">
+              <h3 class="work-title">Volia</h3>
+              <h5 class="text-dark text-xl font-semibold">French Restaurant</h5>
+              <div class="w-16 h-1 bg-white my-4 sm:my-6 rounded-md"></div>
+              <p class="work-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at
+                nisi porttitor rhoncus nisl vestibulum.
+              </p>
+              <button class="work-btn">See project details</button>
+            </div>
+            <div class="w-full md:w-2/3 md:text-right order-1 md:order-2">
+              <img
+                src="./images/work1.png"
+                alt="Work Image"
+                class="work-image"
+              />
+            </div>
+          </div>
+          <div class="mt-20 flex flex-col md:flex-row gap-4 justify-between">
+            <div class="w-full md:w-1/3 order-2 md:order-1">
+              <h3 class="work-title">On Terget</h3>
+              <h5 class="text-dark text-xl font-semibold">
+                Digital marketing agency
+              </h5>
+              <div class="w-16 h-1 bg-white my-4 sm:my-6 rounded-md"></div>
+              <p class="work-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at
+                nisi porttitor rhoncus nisl vestibulum.
+              </p>
+              <button class="work-btn">See project details</button>
+            </div>
+            <div class="w-full md:w-2/3 md:text-right order-1 md:order-2">
+              <img
+                src="./images/work2.png"
+                alt="Work Image"
+                class="work-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work Part End -->
+    </main>
+    <!-- JS -->
+    <script src="./src/main.js"></script>
   </body>
 </html>
