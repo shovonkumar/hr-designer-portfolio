@@ -18,7 +18,7 @@
   }
 
   .title-before {
-    @apply before:content-[''] before:inline-block before:h-10 sm:before:h-12 lg:before:h-14 before:w-1  before:absolute before:left-[-0.75rem] sm:before:top-[-0.25rem] lg:before:top-[-0.50rem];
+    @apply before:content-[''] before:inline-block before:h-10 sm:before:h-12 lg:before:h-14 before:w-1 before:bg-primary before:absolute before:left-[-0.75rem] sm:before:top-[-0.25rem] lg:before:top-[-0.50rem];
   }
 
   .logo-before {
@@ -34,10 +34,18 @@
   }
 
   .work-text {
-    @apply font-medium text-dark2 lg:w-2/3 text-justify text-[15px] lg:text-base;
+    @apply font-medium text-dark2 lg:w-3/4 xl:w-2/3 text-justify text-[15px] lg:text-base;
   }
 
   .work-btn {
-    @apply mt-6 border-dark border-2 px-4 lg:px-6 py-2 lg:py-3 uppercase font-semibold text-[14px] leading-none hover:bg-dark hover:text-white duration-200 ease-linear;
+    @apply mt-6 border-dark border-2 px-4 lg:px-6 py-2 lg:py-3 uppercase font-semibold text-[13px] lg:text-[14px] leading-none hover:bg-dark hover:text-white duration-200 ease-linear;
+  }
+
+  .work-progress-text {
+    @apply text-dark font-medium text-justify text-[15px] md:text-[14px] lg:text-[15px] w-full lg:w-4/5 xl:w-3/4;
+  }
+
+  .contact-btn {
+    @apply uppercase border-white border-2 px-4 sm:px-6 py-2 text-[13px] sm:text-[14px] font-semibold hover:bg-primary hover:border-primary hover:text-dark transition-all duration-200 ease-linear;
   }
 }
