@@ -1,3 +1,14 @@
+// ======= Scroll To Top =======
+
+const preloader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  this.document.body.style.overflow = "hidden";
+  setTimeout(() => {
+    preloader.style.display = "none";
+    this.document.body.style.overflow = "auto";
+  }, 1500);
+});
+
 // ======= Mobile Nav Menu =======
 
 const menuBtn = document.getElementById("menu-btn");
@@ -27,5 +38,24 @@ navLink.forEach((item) => {
     if (menuUl.classList.contains("left-0")) {
       toggleMenu();
     }
+  });
+});
+
+// ======= Scroll To Top =======
+
+const scrollToTopBtn = document.querySelector("#scrollToTop");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 250) {
+    scrollToTopBtn.classList.remove("hidden");
+  } else {
+    scrollToTopBtn.classList.add("hidden");
+  }
+});
+
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });

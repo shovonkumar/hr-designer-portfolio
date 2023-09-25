@@ -30,7 +30,7 @@
   }
 
   .work-image {
-    @apply w-full lg:w-[90%] h-auto md:ml-auto md:mt-2;
+    @apply w-full lg:w-[90%] h-auto md:ml-auto md:mt-2 shadow-xl;
   }
 
   .work-text {
