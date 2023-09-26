@@ -1,4 +1,10 @@
-// ======= Scroll To Top =======
+// ======= Animation (AOS) Init =======
+
+// AOS.init({
+//   duration: 1000,
+// });
+
+// ======= Preloader =======
 
 const preloader = document.getElementById("preloader");
 window.addEventListener("load", function () {
@@ -6,7 +12,10 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     preloader.style.display = "none";
     this.document.body.style.overflow = "auto";
-  }, 1500);
+    AOS.init({
+      duration: 1000,
+    });
+  }, 1000);
 });
 
 // ======= Mobile Nav Menu =======
@@ -58,4 +67,10 @@ scrollToTopBtn.addEventListener("click", function () {
     top: 0,
     behavior: "smooth",
   });
+});
+
+// ======= Glightbox Init =======
+
+const lightbox = GLightbox({
+  selector: ".glightbox",
 });

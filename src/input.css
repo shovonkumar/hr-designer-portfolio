@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  section {
+    @apply overflow-hidden;
+  }
+}
+
 @layer components {
   .container {
     @apply max-w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[920px] xl:max-w-[1140px] px-3;
@@ -38,7 +44,7 @@
   }
 
   .work-btn {
-    @apply mt-6 border-dark border-2 px-4 lg:px-6 py-2 lg:py-3 uppercase font-semibold text-[13px] lg:text-[14px] leading-none hover:bg-dark hover:text-white duration-200 ease-linear;
+    @apply mt-6 border-dark border-2 px-4 lg:px-6 py-2 lg:py-3 uppercase font-semibold text-[13px] lg:text-[14px] leading-none hover:bg-dark hover:text-white duration-200 ease-linear inline-block cursor-pointer;
   }
 
   .work-progress-text {
